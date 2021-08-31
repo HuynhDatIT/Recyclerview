@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="6dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carviewImage2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintDimensionRatio="64:40"
+            app:layout_constraintHorizontal_bias="0"
+            android:elevation="5dp"
+            android:layout_width="150dp"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hinh_bun_bo" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textViewName2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/carviewImage2"
+            app:layout_constraintVertical_bias="0.1"
+            tools:text="Món bún bò"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#f20"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textViewPrice2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/carviewImage2"
+            app:layout_constraintVertical_bias="0.6"
+            tools:text="Giá : 50.000 VNĐ"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="#232121"
+            android:textStyle="italic"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/imgButtonDelete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/carviewImage2"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="1"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   
+
+</androidx.cardview.widget.CardView>
